@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Rock, Paper, Scissors</title>
+	<meta name="author" content="Georgi Yankov" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="wrapper">
+	
+		<header id="header">
+			<hgroup id="title">
+				<h1>Game "Rock, Paper, Scissors"</h1>
+				<h2>Created by Georgi Yankov</h2>
+			</hgroup><!-- #title -->
+		</header><!-- #header -->
+		
+		<div id="middle">
+			
+			<div id="players">
+			
+				<div id="first-player">
+					<p>You</p>
+					<img id="first-player-img" src="img/loader.gif" width="150" height="150" alt="Your choice" />
+				</div><!-- #first-player -->
+				
+				<div id="current-scores">
+					<p>Current Scores</p>
+					<p>
+						<span id="first-player-score">0</span>
+						<span class="semicolon">:</span>
+						<span id="second-player-score">0</span>
+					</p>
+					<p id="show-result"></p>
+				</div><!-- #current-scores -->
+				
+				<div id="second-player">
+					<p>Computer</p>
+					<img id="second-player-img" src="img/loader.gif" width="150" height="150" alt="Computer choice" />
+				</div><!-- #second-player --> 
+				
+			</div><!-- #players -->
+			
+			<div id="make-choice">
+				<div id="rock" class="make-choice-item">
+					<img src="img/rock.png" width="150" height="150" alt="Choose Rock" />
+				</div><!-- #rock -->
+				<div id="paper" class="make-choice-item">
+					<img src="img/paper.png" width="150" height="150" alt="Choose Paper" />
+				</div><!-- #paper -->
+				<div id="scissors" class="make-choice-item">
+					<img src="img/scissors.png" width="150" height="150" alt="Choose scissors" />
+				</div><!-- #scissors -->
+			</div><!-- #make-choice -->
+			
+			<div>
+				<input id="new-game" type="button" value="New Game" />
+			</div>
+			
+			<div id="game-counter-wrapper">
+				<p>Played games: <span id="game-counter">0</span></p>
+			</div><!-- #game-counter-wrapper -->
+			
+		</div><!-- #middle -->
+		
+		<footer id="footer">
+			<p>You can play <a href="http://avaart.net/game-1/">2nd</a> or <a href="http://abobev.telerik-students.org/rps/">3rd</a> version of the game</p>
+		</footer><!-- #footer -->
+		
+	</div><!-- #wrapper -->
+	<script src="js/script.js"></script>
+</body>
+</html>
